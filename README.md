@@ -1,3 +1,3 @@
-# wisdomch15.github.io
- [stuff](something)
-[dotun](stuff.md)
+# Wisdom's Home Labs
+ Networking Labs
+Security Labs
