@@ -1,9 +1,9 @@
 # Packet Sniffing and Analysis
 
-##Tools Used\
+TOOLS USED\
 Wireshark\
 VirtualBox\
 Kali Linux
 
-##Introduction\
-In this lab, I used 
+INTRODUCTION\
+In this lab, I used Wireshark to capture and analyze network traffic. The goal was to identify protocols, inspect packets and detect suspicious activity.
