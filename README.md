@@ -1,2 +1,2 @@
 # wisdomch15.github.io
- stuff
+ [stuff](something)
