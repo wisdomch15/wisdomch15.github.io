@@ -3,7 +3,7 @@
 ##Tools Used\
 Wireshark\
 VirtualBox\
-Kali Linux\
+Kali Linux
 
 ##Introduction\
 In this lab, I used 
