@@ -15,11 +15,11 @@ STEPS
 Step 1:\
 I launched Wireshark on VirtualBox and selected the 'eth0' interface for packet capture.\
 ![image](image1.jpg)\
-![image2](image2.jpg)
+![image3](image3.jpg)
 
 Step 2:\
 I started capturing and generated some HTTP traffic by visiting 'http://testphp.vulnweb.com'.\
-![image3](image3.jpg)
+![image2](image2.jpg)
 
 Step 3:\
 I applied the filter 'HTTP' to only show HTTP traffic.\
