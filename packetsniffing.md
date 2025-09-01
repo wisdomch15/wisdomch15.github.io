@@ -32,4 +32,4 @@ FINDINGS
 
 CONCLUSION
 
-Packet sniffing helps analysts understand normal vs. suspicious traffic. This lab showed me how to capture and analyze traffic using Wireshark and tcpdump.
+Packet sniffing helps analysts understand normal vs. suspicious traffic. This lab showed me how to capture and analyze traffic using Wireshark.
