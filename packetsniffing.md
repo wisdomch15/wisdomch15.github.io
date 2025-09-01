@@ -14,17 +14,21 @@ STEPS
 
 Step 1:\
 I launched Wireshark on VirtualBox and selected the 'eth0' interface for packet capture.\
-![image](image1.jpg)
+![image](image1.jpg)\
+![image2](image2.jpg)
 
 Step 2:\
-I started capturing and generated some HTTP traffic by visiting 'http://testphp.vulnweb.com'.
+I started capturing and generated some HTTP traffic by visiting 'http://testphp.vulnweb.com'.\
+![image3](image3.jpg)
 
 Step 3:\
-I applied the filter 'HTTP' to only show HTTP traffic.
+I applied the filter 'HTTP' to only show HTTP traffic.\
+![image4](image4.jpg)
 
 Step 4:\
 I followed a TCP stream to see the full HTTP request and response.
-
+![image6](image6.jpg)
+![image7](image7.jpg)
 FINDINGS
 
 - I was able to see HTTP requests in plaintext.  
