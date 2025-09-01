@@ -29,17 +29,17 @@ Step 4:\
 I followed a TCP stream to see the full HTTP request and response.
 ![image6](image6.jpg)\
 ![image7](image7.jpg)\
-Client Request:\
-- HTTP GET request\
-- Host: testphp.vulnweb.com\
-- User-Agent: Firefox 128\
+Client Request:
+- HTTP GET request
+- Host: testphp.vulnweb.com
+- User-Agent: Firefox 128
 - Accept-Encoding: gzip, deflate
 
-Server Response:\
-- Status: HTTP/1.1 200 OK\
-- Server: nginx/1.19.0\
-- Content-Type: text/html; charset=UTF-8\
-- Transfer-Encoding: chunked\
+Server Response:
+- Status: HTTP/1.1 200 OK
+- Server: nginx/1.19.0
+- Content-Type: text/html; charset=UTF-8
+- Transfer-Encoding: chunked
 - X-Powered-By: PHP/5.6.40
 
 FINDINGS
