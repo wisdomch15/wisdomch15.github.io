@@ -23,3 +23,9 @@ I applied th efilter 'HTTP' to only show HTTP traffic.
 
 Step 4:\
 I followed a TCP stream to see the full HTTP request and response.
+
+FINDINGS
+
+- I was able to see HTTP requests in plaintext.  
+- Usernames and passwords over HTTP can be intercepted.  
+- This demonstrates why HTTPS is critical.
