@@ -14,16 +14,16 @@ The goal was to understand how a client resolves a domain name into an IP addres
 STEPS
 
 Step 1:\
-I launched Wireshark on VirtualBox and selected the `eth0` interface for packet capture.\
+I launched Wireshark on VirtualBox and selected the 'eth0' interface for packet capture.\
 ![image](image1.jpg)\
 ![image](image3.jpg)
 
 Step 2:\
-I generated DNS traffic by visiting `http://example.com` in Firefox.\
+I generated DNS traffic by visiting 'http://example.com' in Firefox.\
 ![image](dns1.jpg)
 
 Step 3:\
-I applied the filter `dns` to only show DNS traffic.\
+I applied the filter 'dns' to only show DNS traffic.\
 ![image](dns2.jpg)
 
 Step 4:\
@@ -51,5 +51,5 @@ FINDINGS
 
 CONCLUSION
 
-This lab demonstrated the **basic DNS resolution process** using Wireshark.  
+This lab demonstrated the basic DNS resolution process using Wireshark.  
 I learned how to capture queries, analyze responses, and understand the role of DNS in network communication.
