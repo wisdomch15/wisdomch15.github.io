@@ -16,7 +16,7 @@ STEPS
 Step 1:\
 I launched Wireshark on VirtualBox and selected the `eth0` interface for packet capture.\
 ![image](image1.jpg)\
-![image](image2.jpg)
+![image](image3.jpg)
 
 Step 2:\
 I generated DNS traffic by visiting `http://example.com` in Firefox.\
@@ -29,19 +29,18 @@ I applied the filter `dns` to only show DNS traffic.\
 Step 4:\
 I examined a DNS query packet sent by the client.\
 Client Request:  
-- Transaction ID: 0x1234  
+- Transaction ID: 0x0549 
 - Flags: Standard query  
-- Query: testphp.vulnweb.com  
-- Type: A (IPv4 host address)  
-- Class: IN (Internet)  
+- Query: example.com  
+- Type: A (IPv4 host address)   
 ![image](dns3.jpg)
 
 Step 5:\
 I examined the DNS response from the server.\
 Server Response:  
-- Transaction ID: 0x1234 (matches query)  
+- Transaction ID: 0x0549 (matches query)  
 - Flags: Standard query response, no error  
-- Answer: testphp.vulnweb.com → 192.168.1.50  
+- Answer: example.com → 23.192.228.80  
 ![image](dns4.jpg)
 
 FINDINGS
