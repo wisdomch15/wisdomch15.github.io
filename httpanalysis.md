@@ -14,21 +14,21 @@ STEPS
 
 Step 1:\
 I launched Wireshark on VirtualBox and selected the 'eth0' interface for packet capture.\
-![image](image1.jpg)\
-![image3](image3.jpg)
+![image](image01.jpg)\
+![image3](image03.jpg)
 
 Step 2:\
 I started capturing and generated some HTTP traffic by visiting 'http://testphp.vulnweb.com'.\
-![image2](image2.jpg)
+![image2](image02.jpg)
 
 Step 3:\
 I applied the filter 'HTTP' to only show HTTP traffic.\
-![image4](image4.jpg)
+![image4](image04.jpg)
 
 Step 4:\
 I followed a TCP stream to see the full HTTP request and response.
-![image6](image6.jpg)\
-![image7](image7.jpg)\
+![image6](image06.jpg)\
+![image7](image07.jpg)\
 Client Request:
 - HTTP GET request
 - Host: testphp.vulnweb.com
