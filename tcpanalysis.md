@@ -68,3 +68,4 @@ CONCLUSION
 
 This lab demonstrated how TCP establishes a reliable channel between two hosts before data transfer.  
 By analyzing the SYN, [SYN,ACK] and ACK packets in detail, I learned how TCP guarantees ordered, error-free communication , which is a fundamental process for almost all modern internet applications.
+
