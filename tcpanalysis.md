@@ -20,11 +20,11 @@ I launched Wireshark on VirtualBox and selected the `eth0` interface for packet 
 
 Step 2:\
 I generated TCP traffic by visiting `google.com:80` in Firefox.\
-![image](tcp2.jpg)
+![image](tcp1.jpg)
 
 Step 3:\
 I applied the filter `tcp.flags` to only show TCP traffic.\
-![image](tcp3.jpg)
+![image](tcp2.jpg)
 
 Step 4: TCP Three-Way Handshake Analysis
 
@@ -35,7 +35,8 @@ Step 4: TCP Three-Way Handshake Analysis
   - Sequence Number: `0`  
   - Acknowledgment Number: `0`  
   - Info: Client initiates connection and proposes initial sequence number.  
-  ![image](tcp_syn.jpg)
+  ![image](tcp2.jpg)\
+  ![image](tcp3.jpg)
 
 - Packet 2: SYN,ACK 
   - Source: `34.223.124.45`  
@@ -44,7 +45,8 @@ Step 4: TCP Three-Way Handshake Analysis
   - Sequence Number: `0`  
   - Acknowledgment Number: `1` 
   - Info: Server acknowledges client’s SYN and responds with its own sequence number.  
-  ![image](tcp_synack.jpg)
+  ![image](tcp4.jpg)\
+  ![image](tcp5.jpg)
 
 - Packet 3: ACK
   - Source: `10.0.2.15` 
@@ -53,7 +55,8 @@ Step 4: TCP Three-Way Handshake Analysis
   - Sequence Number: `1`  
   - Acknowledgment Number: `1`
   - Info: Client acknowledges server’s SYN. Connection established.  
-  ![image](tcp_ack.jpg)
+  ![image](tcp6.jpg)\
+  ![image](tcp7.jpg)
 
 FINDINGS
 
