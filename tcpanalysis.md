@@ -9,7 +9,7 @@ Kali Linux
 INTRODUCTION
 
 In this lab, I used Wireshark to capture and analyze TCP traffic.  
-The goal was to observe the TCP three-way handshake and connection termination.
+The goal was to observe the TCP three-way handshake.
 
 STEPS
 
@@ -26,11 +26,34 @@ Step 3:\
 I applied the filter `tcp.flags` to only show TCP traffic.\
 ![image](tcp3.jpg)
 
-Step 4:\
-I examined the TCP three-way handshake.  
-- Packet 1: SYN → Client requests connection  
-- Packet 2: SYN-ACK → Server acknowledges and responds  
-- Packet 3: ACK → Client acknowledges, connection established  
+Step 4: TCP Three-Way Handshake Analysis
+
+- Packet 1: SYN  
+  - Source: `10.0.2.15`  
+  - Destination: `34.223.124.45`  
+  - Flags: SYN  
+  - Sequence Number: `0`  
+  - Acknowledgment Number: `0`  
+  - Info: Client initiates connection and proposes initial sequence number.  
+  ![image](tcp_syn.jpg)
+
+- Packet 2: SYN,ACK 
+  - Source: `34.223.124.45`  
+  - Destination: `10.0.2.15`   
+  - Flags: SYN, ACK  
+  - Sequence Number: `0`  
+  - Acknowledgment Number: `1` 
+  - Info: Server acknowledges client’s SYN and responds with its own sequence number.  
+  ![image](tcp_synack.jpg)
+
+- Packet 3: ACK
+  - Source: `10.0.2.15` 
+  - Destination: `34.223.124.45` 
+  - Flags: ACK  
+  - Sequence Number: `1`  
+  - Acknowledgment Number: `1`
+  - Info: Client acknowledges server’s SYN. Connection established.  
+  ![image](tcp_ack.jpg)
 
 FINDINGS
 
@@ -39,6 +62,5 @@ FINDINGS
 
 CONCLUSION
 
-This lab demonstrated how to capture and analyze TCP sessions.  
-I learned to identify the handshake, follow sequence numbers, and observe how TCP ensures reliability.
-
+This lab demonstrated how TCP establishes a reliable channel between two hosts before data transfer.  
+By analyzing the SYN, [SYN,ACK] and ACK packets in detail, I learned how TCP guarantees ordered, error-free communication , which is a fundamental process for almost all modern internet applications.
