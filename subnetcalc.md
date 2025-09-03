@@ -30,27 +30,27 @@ To create 4 subnets, I borrowed 2 bits from the host portion.
 ### Step 3: Subnet Details
 
 #### Subnet 1: `192.168.1.0/26`
-- **Network Address:** 192.168.1.0  
-- **Broadcast Address:** 192.168.1.63  
-- **Usable Host Range:** 192.168.1.1 – 192.168.1.62  
+- Network Address: 192.168.1.0  
+- Broadcast Address: 192.168.1.63  
+- Usable Host Range: 192.168.1.1 – 192.168.1.62  
 ![image](sbc1.png)
 
 #### Subnet 2: `192.168.1.64/26`
-- **Network Address:** 192.168.1.64  
-- **Broadcast Address:** 192.168.1.127  
-- **Usable Host Range:** 192.168.1.65 – 192.168.1.126  
+- Network Address: 192.168.1.64  
+- Broadcast Address: 192.168.1.127  
+- Usable Host Range: 192.168.1.65 – 192.168.1.126  
 ![image](sbc2.png)
 
 #### Subnet 3: `192.168.1.128/26`
-- **Network Address:** 192.168.1.128  
-- **Broadcast Address:** 192.168.1.191  
-- **Usable Host Range:** 192.168.1.129 – 192.168.1.190  
+- Network Address: 192.168.1.128  
+- Broadcast Address: 192.168.1.191  
+- Usable Host Range: 192.168.1.129 – 192.168.1.190  
 ![image](sbc3.png)
 
 #### Subnet 4: `192.168.1.192/26`
-- **Network Address:** 192.168.1.192  
-- **Broadcast Address:** 192.168.1.255  
-- **Usable Host Range:** 192.168.1.193 – 192.168.1.254  
+- Network Address: 192.168.1.192  
+- Broadcast Address: 192.168.1.255  
+- Usable Host Range: 192.168.1.193 – 192.168.1.254  
 ![image](sbc4.png)
 
 ## FINDINGS
