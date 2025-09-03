@@ -30,22 +30,33 @@ I applied the filter `icmp` to only show ICMP traffic.
 
 Step 4: ICMP Request and Reply Analysis
 
-Packet 1: ICMP Echo Request (Client → Server)
-Source: 192.168.1.10 (Client)
-Destination: 142.250.190.14 (Google)
-Type: 8 (Echo Request)
-Code: 0
-Identifier (ID): 0x1c4d
-Sequence Number: 1
-Info: The client is requesting a response to test connectivity.
+Packet 1: ICMP Echo Request 
+- Source: 10.0.2.15  
+- Destination: 8.8.8.8   
+- Type: 8   
+- Code: 0  
+- Identifier (ID): 0x0002  
+- Sequence Number: 1  
+- Info: The client is requesting a response to test connectivity.  
+![image](icmp03.jpg)
+![image](icmp04.jpg)
 
-Packet 2: ICMP Echo Reply (Server → Client)
-Source: 142.250.190.14 (Google)
-Destination: 192.168.1.10 (Client)
-Type: 0 (Echo Reply)
-Code: 0
-Identifier (ID): 0x1c4d (matches request)
-Sequence Number: 1 (matches request)
-Info: The server replies, confirming connectivity.
+Packet 2: ICMP Echo Reply   
+- Source: 8.8.8.8 
+- Destination: 10.0.2.15   
+- Type: 0   
+- Code: 0
+- Sequence Number: 1  
+- Identifier (ID): 0x0002  
+- Info: The server replied to confirm connectivity.  
+![image](icmp05.jpg)
+![image](icmp06.jpg)
+
+FINDINGS
+- ICMP packets are used for connectivity testing and troubleshooting.  
+- The Echo Request and Echo Reply process shows successful communication between client and server.  
+
+CONCLUSION
+Packet sniffing and ICMP analysis help analysts confirm whether a system is reachable. This lab showed how to capture and analyze ICMP request/reply messages using Wireshark.
 
 
