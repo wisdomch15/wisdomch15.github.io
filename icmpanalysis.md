@@ -53,10 +53,12 @@ Packet 2: ICMP Echo Reply
 ![image](icmp06.jpg)
 
 FINDINGS
+
 - ICMP packets are used for connectivity testing and troubleshooting.  
 - The Echo Request and Echo Reply process shows successful communication between client and server.  
 
-CONCLUSION\
+CONCLUSION
+
 Packet sniffing and ICMP analysis help analysts confirm whether a system is reachable. This lab showed how to capture and analyze ICMP request/reply messages using Wireshark.
 
 
