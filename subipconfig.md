@@ -1,1 +1,1 @@
-[Subnetting and IP Configuration](ipassignment.md)
+[Static IP Address Configuration](ipassignment.md)
