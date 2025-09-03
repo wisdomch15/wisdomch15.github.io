@@ -4,16 +4,12 @@
 ## TOOLS USED
 
 - VirtualBox  
-- Kali Linux / Ubuntu  
-- Terminal (ip command)
-
----
+- Kali Linux  
+- Terminal
 
 ## INTRODUCTION
 
 In this lab, I practiced how to manually configure a static IP address inside a Linux VM running in VirtualBox. This is an important step for understanding subnetting, IP configuration, and how devices communicate on a network.
-
----
 
 ## STEPS
 
