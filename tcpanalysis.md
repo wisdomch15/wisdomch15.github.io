@@ -1,33 +1,33 @@
 [**<= BACK**](packetsniffing.md)<br><br>
 # TCP Analysis
 
-TOOLS USED
+## TOOLS USED
 
 Wireshark\
 VirtualBox\
 Kali Linux
 
-INTRODUCTION
+## INTRODUCTION
 
 In this lab, I used Wireshark to capture and analyze TCP traffic.  
 The goal was to observe the TCP three-way handshake.
 
-STEPS
+## STEPS
 
-Step 1:\
+### Step 1:
 I launched Wireshark on VirtualBox and selected the `eth0` interface for packet capture.\
 ![image](image01.jpg)
 ![image](image03.jpg)
 
-Step 2:\
+### Step 2:
 I generated TCP traffic by visiting `google.com:80` in Firefox.\
 ![image](tcp01.jpg)
 
-Step 3:\
+### Step 3:
 I applied the filter `tcp.flags` to only show TCP traffic.\
 ![image](tcp02.jpg)
 
-Step 4: TCP Three-Way Handshake Analysis
+### Step 4: TCP Three-Way Handshake Analysis
 
 - Packet 1: SYN  
   - Source: `10.0.2.15`  
@@ -59,12 +59,12 @@ Step 4: TCP Three-Way Handshake Analysis
   ![image](tcp06.jpg)\
   ![image](tcp07.jpg)
 
-FINDINGS
+## FINDINGS
 
 - TCP uses a reliable connection setup with the three-way handshake.  
 - Every packet has sequence and acknowledgment numbers.    
 
-CONCLUSION
+## CONCLUSION
 
 This lab demonstrated how TCP establishes a reliable channel between two hosts before data transfer.  
 By analyzing the SYN, [SYN,ACK] and ACK packets in detail, I learned how TCP guarantees ordered, error-free communication , which is a fundamental process for almost all modern internet applications.
