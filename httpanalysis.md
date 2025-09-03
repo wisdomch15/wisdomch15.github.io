@@ -13,20 +13,20 @@ In this lab, I used Wireshark to capture and analyze network traffic. The goal w
 
 ## STEPS
 
-### Step 1:\
+### Step 1:
 I launched Wireshark on VirtualBox and selected the 'eth0' interface for packet capture.\
 ![image](image01.jpg)\
 ![image3](image03.jpg)
 
-### Step 2:\
+### Step 2:
 I started capturing and generated some HTTP traffic by visiting 'http://testphp.vulnweb.com'.\
 ![image2](image02.jpg)
 
-### Step 3:\
+### Step 3:
 I applied the filter 'HTTP' to only show HTTP traffic.\
 ![image4](image04.jpg)
 
-### Step 4:\
+### Step 4:
 I followed a TCP stream to see the full HTTP request and response.
 ![image6](image06.jpg)\
 ![image7](image07.jpg)\
