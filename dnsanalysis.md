@@ -33,13 +33,13 @@ Client Request:
 - Transaction ID: 0x0549 
 - Flags: Standard query  
 - Query: example.com  
-- Type: A (IPv4 host address)   
+- Type: A    
 ![image](dns03.jpg)
 
 Step 5:\
 I examined the DNS response from the server.\
 Server Response:  
-- Transaction ID: 0x0549 (matches query)  
+- Transaction ID: 0x0549   
 - Flags: Standard query response, no error  
 - Answer: example.com → 23.192.228.80  
 ![image](dns04.jpg)
