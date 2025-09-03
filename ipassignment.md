@@ -25,3 +25,12 @@ I assigned the static IP `192.168.1.10/24` to the `eth0` interface using the fol
 ```bash
 sudo ip addr add 192.168.1.10/24 dev eth0
 
+Step 3:
+I verified that the address was successfully applied with `ip a`
+
+FINDINGS
+The interface eth0 was successfully assigned the static IP 192.168.1.10/24.
+This configuration does not persist after reboot unless added to network configuration files.
+
+CONCLUSION
+By assigning a static IP manually, I learned how to configure network interfaces and verify connectivity using Linux tools. This skill is essential for subnetting, testing, and troubleshooting networks.
