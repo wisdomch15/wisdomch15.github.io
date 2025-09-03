@@ -27,30 +27,31 @@ To create 4 subnets, I borrowed 2 bits from the host portion.
 - Block size = `256/4`
 - Each subnet has 64 addresses and 62 usable hosts.
 
-### Step 3: Subnet Details
+### Step 3:
+I run the `ipcalc` command to verify.
 
-#### Subnet 1: `192.168.1.0/26`
-- Network Address: 192.168.1.0  
-- Broadcast Address: 192.168.1.63  
-- Usable Host Range: 192.168.1.1 – 192.168.1.62  
+#### Subnet 1: `10.0.2.0/26`
+- Network Address: 10.0.2.0  
+- Broadcast Address: 10.0.2.63  
+- Usable Host Range: 10.0.2.1 – 10.0.2.62  
 ![image](sbc1.png)
 
-#### Subnet 2: `192.168.1.64/26`
-- Network Address: 192.168.1.64  
-- Broadcast Address: 192.168.1.127  
-- Usable Host Range: 192.168.1.65 – 192.168.1.126  
+#### Subnet 2: `10.0.2.64/26`
+- Network Address: 10.0.2.64  
+- Broadcast Address: 10.0.2.127  
+- Usable Host Range: 10.0.2.65 – 10.0.2.126  
 ![image](sbc2.png)
 
-#### Subnet 3: `192.168.1.128/26`
-- Network Address: 192.168.1.128  
-- Broadcast Address: 192.168.1.191  
-- Usable Host Range: 192.168.1.129 – 192.168.1.190  
+#### Subnet 3: `10.0.2.128/26`
+- Network Address: 10.0.2.128  
+- Broadcast Address: 10.0.2.191  
+- Usable Host Range: 10.0.2.129 – 10.0.2.190  
 ![image](sbc3.png)
 
-#### Subnet 4: `192.168.1.192/26`
-- Network Address: 192.168.1.192  
-- Broadcast Address: 192.168.1.255  
-- Usable Host Range: 192.168.1.193 – 192.168.1.254  
+#### Subnet 4: `10.0.2.192/26`
+- Network Address: 10.0.2.192  
+- Broadcast Address: 10.0.2.255  
+- Usable Host Range: 10.0.2.193 – 10.0.2.254  
 ![image](sbc4.png)
 
 ## FINDINGS
