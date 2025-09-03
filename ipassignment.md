@@ -17,10 +17,10 @@ In this lab, I practiced how to manually configure a static IP address inside a 
 
 ## STEPS
 
-**Step 1:**  
+### Step 1:
 I opened the terminal in my Kali Linux VM.
 
-**Step 2:**  
+### Step 2: 
 I assigned the static IP `192.168.1.10/24` to the `eth0` interface using the following command:  
 ```bash
 sudo ip addr add 192.168.1.10/24 dev eth0
