@@ -1,4 +1,4 @@
-[**<= BACK**](Networking.md)<br><br>
+[**<= BACK**](subipconfig.md)<br><br>
 # Static IP Address Configuration
 
 ## TOOLS USED
