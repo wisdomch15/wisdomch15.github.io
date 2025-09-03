@@ -19,10 +19,13 @@ This gives 256 total addresses.
 
 ### Step 2:
 To create 4 subnets, I borrowed 2 bits from the host portion.  
-- Formula: 2^n = 4(number of subnets)\ `n=2`
+- Formula: 2^n = 4(number of subnets)
+- `n=2`
 - Add `n` to previous prefix. `2` + `/24`. New prefix = `/26`  
-- New subnet mask = `255.255.255.192`  
-- Each subnet has **64 addresses (62 usable hosts)**.
+- New subnet mask = `255.255.255.192`
+- Block size = Hosts / number of subnets
+- Block size = `256/4`
+- Each subnet has 64 addresses and 62 usable hosts.
 
 ### Step 3: Subnet Details
 
@@ -30,25 +33,25 @@ To create 4 subnets, I borrowed 2 bits from the host portion.
 - **Network Address:** 192.168.1.0  
 - **Broadcast Address:** 192.168.1.63  
 - **Usable Host Range:** 192.168.1.1 – 192.168.1.62  
-![image](subnet1.png)
+![image](sbc1.png)
 
 #### Subnet 2: `192.168.1.64/26`
 - **Network Address:** 192.168.1.64  
 - **Broadcast Address:** 192.168.1.127  
 - **Usable Host Range:** 192.168.1.65 – 192.168.1.126  
-![image](subnet2.png)
+![image](sbc2.png)
 
 #### Subnet 3: `192.168.1.128/26`
 - **Network Address:** 192.168.1.128  
 - **Broadcast Address:** 192.168.1.191  
 - **Usable Host Range:** 192.168.1.129 – 192.168.1.190  
-![image](subnet3.png)
+![image](sbc3.png)
 
 #### Subnet 4: `192.168.1.192/26`
 - **Network Address:** 192.168.1.192  
 - **Broadcast Address:** 192.168.1.255  
 - **Usable Host Range:** 192.168.1.193 – 192.168.1.254  
-![image](subnet4.png)
+![image](sbc4.png)
 
 ## FINDINGS
 - Borrowing bits from the host portion reduces host capacity but increases the number of networks.  
