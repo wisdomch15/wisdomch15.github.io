@@ -1,5 +1,5 @@
 [**<= BACK**](Networking.md)<br><br>
-# IP Address Assignment Lab
+# Static IP Address Configuration
 
 ## TOOLS USED
 
@@ -15,6 +15,7 @@ In this lab, I practiced how to manually configure a static IP address inside a 
 
 ### Step 1:
 I opened the terminal in my Kali Linux VM.
+![image](ip01.jpg)
 
 ### Step 2: 
 I assigned the static IP `10.0.2.200` to the `eth0` interface using the following command  
