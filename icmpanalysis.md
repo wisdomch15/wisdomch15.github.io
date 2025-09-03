@@ -16,14 +16,17 @@ STEPS
 
 Step 1:  
 I launched Wireshark on VirtualBox and selected the `eth0` interface for packet capture.  
-![image](icmp1.jpg)
+![image](image01.jpg)\
+![image](image03.jpg)
 
 Step 2: 
 I generated ICMP traffic by pinging the ip address `8.8.8.8`.  
+![image](icmp01.jpg)
+![image](icmp02.jpg)
 
 Step 3:
-I applied the filter icmp to only show ICMP traffic.
-
+I applied the filter `icmp` to only show ICMP traffic.
+![image](icmp03.jpg)
 
 Step 4: ICMP Request and Reply Analysis
 
