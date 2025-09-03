@@ -17,15 +17,16 @@ In this lab, I practiced how to manually configure a static IP address inside a 
 I opened the terminal in my Kali Linux VM.
 
 ### Step 2: 
-I assigned the static IP `192.168.1.10/24` to the `eth0` interface using the following command  
-bash
-sudo ip addr add 192.168.1.10/24 dev eth0
+I assigned the static IP `10.0.2.200` to the `eth0` interface using the following command  
 
 ### Step 3:
+I added the default gateway.
+
+### Step 4:
 I verified that the address was successfully applied with the `ip a` command.
 
 ## FINDINGS
-The interface eth0 was successfully assigned the static IP 192.168.1.10/24.
+The interface `eth0` was successfully assigned the static IP `10.0.2.200`.
 This configuration does not persist after reboot unless added to network configuration files.
 
 ## CONCLUSION
