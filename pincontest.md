@@ -27,7 +27,7 @@ I verify the `eth0` interface on both VMs have the new network ip address using 
 ![image](pct7.jpg)
 
 ### Step 3:
-I listen for icmp packets on one VM while i use the other VM ping it.
+I listen for icmp packets on one VM while i use the other VM to ping it.
 ![image](pct8.jpg)
 ![image](pct9.jpg)
 
