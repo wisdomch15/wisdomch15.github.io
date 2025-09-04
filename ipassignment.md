@@ -19,7 +19,7 @@ I opened the terminal in my Kali Linux VM and viewed the ip addresses on the `et
 ![image](ip02.jpg)
 
 ### Step 2: 
-I assigned the static IP `10.0.2.200/24` to the `eth0` interface using the following command 
+I assigned the static IP `10.0.2.200/24` to the `eth0` interface.
 ![image](ip03.jpg)
 
 ### Step 3:
