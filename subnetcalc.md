@@ -13,9 +13,7 @@ The goal was to calculate the network address, broadcast address, and usable hos
 ## STEPS
 
 ### Step 1:
-I started with the network `10.0.2.0/24`.  
-A `/24` means 24 bits are used for the network and 8 bits for hosts.  
-This gives 256 total addresses.
+I started with the network `10.0.2.0/24`. A `/24` means 24 bits are used for the network and 8 bits for hosts. This gives 256 total addresses.
 
 ### Step 2:
 To create 4 subnets, I borrowed 2 bits from the host portion.  
@@ -60,6 +58,4 @@ I run the `ipcalc` command to verify.
 - Subnetting ensures efficient use of IP addresses in large networks.
 
 ## CONCLUSION
-Subnetting is a critical skill for network security engineers and SOC analysts.  
-It helps optimize address allocation, improves network performance, and isolates traffic.  
-This lab taught me how to manually calculate subnets and verify results using `ipcalc`.
+Subnetting is a critical skill for network security engineers and SOC analysts. It helps optimize address allocation, improves network performance, and isolates traffic. This lab taught me how to manually calculate subnets and verify results using `ipcalc`.
