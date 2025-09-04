@@ -7,7 +7,7 @@
 - Terminal
 
 ## INTRODUCTION
-This lab demonstrates how IP configuration affects connectivity. Two VMs are placed on the same local area network. First, they are configured in the same subnet. Then one VM is moved to a different subnet without a router.
+This lab demonstrates how IP configuration affects connectivity. Two VMs are placed on the same local area network. They are configured in the same subnet.
 
 ## STEPS
 
