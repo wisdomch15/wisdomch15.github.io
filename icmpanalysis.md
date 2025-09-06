@@ -28,7 +28,7 @@ I generated ICMP traffic by pinging the ip address `8.8.8.8`.
 I applied the filter `icmp` to only show ICMP traffic.
 ![image](icmp03.jpg)
 
-### Step 4: ICMP Request and Reply Analysis
+### Step 4:
 
 Packet 1: ICMP Echo Request 
 - Source: 10.0.2.15  
