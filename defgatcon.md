@@ -28,15 +28,12 @@ On the first VM, I manually set the IP address to `192.168.1.10/24` and the gate
 On pfSense, I created firewall rules to allow traffic between LAN1 and LAN2, by going on `https://192.168.1.1`.
 
 ### Step 6:  
-I tested connectivity by pinging from the first VM `192.168.1.10` to the sedond VM `192.168.2.10` and vice versa. 
+I tested connectivity by pinging from the first VM `192.168.1.10` to the second VM `192.168.2.10` and vice versa. 
 
 
 ## FINDINGS
 - Without a default gateway, VMs on different subnets could not reach each other.  
 - After setting the default gateway to pfSense and adding firewall rules, communication between subnets became possible.  
-- Using Any → Any rules ensures traffic flows for testing, but in production, rules should be restricted (e.g., only ICMP or specific ports).
 
 ## CONCLUSION
-This lab demonstrated how pfSense can act as a router between two isolated subnets.  
-By configuring IP addresses, default gateways, and firewall rules, inter-subnet communication was established.  
-In real-world environments, restricting firewall rules is essential to maintain security, but for lab purposes, open rules simplify verification of connectivity.
+This lab demonstrated how pfSense can act as a router between two isolated subnets. By configuring IP addresses, default gateways, and firewall rules, inter-subnet communication was established. Furthermore, restricting firewall rules is essential to maintain security.
