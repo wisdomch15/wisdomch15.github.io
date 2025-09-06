@@ -27,8 +27,8 @@ I generated TCP traffic by visiting `google.com:80` in Firefox.\
 I applied the filter `tcp.flags` to only show TCP traffic.\
 ![image](tcp02.jpg)
 
-### Step 4: TCP Three-Way Handshake Analysis
-
+### Step 4:
+I analyze each packet.
 - Packet 1: SYN  
   - Source: `10.0.2.15`  
   - Destination: `34.223.124.45`  
