@@ -40,14 +40,14 @@ EOF
 ### Step 2: 
 I generated the hashes.
 
-#### MD5 Hashes
+#### MD5 
 ```bash
 while read -r pw; do
   echo -n "$pw" | md5sum | awk '{print $1}'
 done < passwords.txt > hashes_md5.txt
 ```
 
-#### SHA-256 Hashes
+#### SHA-256 
 ```bash
 while read -r pw; do
   echo -n "$pw" | sha256sum | awk '{print $1}'
@@ -58,13 +58,13 @@ done < passwords.txt > hashes_sha256.txt
 ### Step 3: 
 I cracked the hashes with hashcat.
 
-#### MD5 Example
+#### MD5 
 ```bash
 hashcat -m 0 -a 0 hashes_md5.txt /usr/share/wordlists/rockyou.txt
 hashcat --show -m 0 hashes_md5.txt
 ```
 
-#### SHA-256 Example
+#### SHA-256 
 ```bash
 hashcat -m 1400 -a 0 hashes_sha256.txt /usr/share/wordlists/rockyou.txt
 hashcat --show -m 1400 hashes_sha256.txt
