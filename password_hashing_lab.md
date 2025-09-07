@@ -1,21 +1,17 @@
-# 🔐 Password Hashing & Cracking Lab
+# Password Hashing & Cracking 
 
-## 📌 Introduction
-In this lab, I explored how password hashing and cracking works using **Hashcat** and **John the Ripper**.  
-The objective was to:
-- Generate hashes using weak and strong passwords (MD5, SHA-256).
-- Attempt to crack them using wordlists and brute-force attacks.
-- Compare the resilience of weak vs strong passwords.
-
----
-
-## 🛠️ Tools Used
+##  Tools Used
 - Kali Linux
 - Hashcat
 - John the Ripper
 - Wordlists (`rockyou.txt` and custom lists)
 
----
+##  Introduction
+In this lab, I explored how password hashing and cracking works using Hashcat   
+The objective was to:
+- Generate hashes using weak and strong passwords (MD5, SHA-256).
+- Attempt to crack them using dictionary attacks
+- Compare the resilience of weak vs strong passwords.
 
 ## ⚙️ Step 1: Setup
 Created a working directory for the lab:
