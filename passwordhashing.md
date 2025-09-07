@@ -3,7 +3,6 @@
 ##  Tools Used
 - Kali Linux
 - Hashcat
-- John the Ripper
 - Wordlists (`rockyou.txt` and custom lists)
 
 ##  Introduction
@@ -98,7 +97,7 @@ Example:
 
 ---
 
-## 📝 Findings & Conclusion
+## FINDINGS
 
 - **Weak passwords** (`123456`, `password`, `letmein`, `password123`) were cracked easily using `rockyou.txt`.  
 - **Strong passwords** (`S3cureP@55w0rd2025!`, `correcthorsebatterystaple`) resisted cracking within reasonable time.  
@@ -109,9 +108,5 @@ Example:
   - Use **long, complex, unique passwords**.
   - Store them with **slow, salted hashing algorithms** (e.g., bcrypt, Argon2).
 
----
-
-## ✅ Next Steps
-- Try using brute-force (`-a 3`) and hybrid attacks in Hashcat.
-- Test additional hashing algorithms (SHA-512, bcrypt).
-- Experiment with custom rule sets to modify dictionary words.
+## CONCLUSION
+Weak passwords were cracked instantly with a dictionary attack, while strong ones resisted both dictionary and brute-force attempts. MD5 and SHA-256 without salting are insecure for password storage. Strong, unique passwords combined with modern hashing algorithms (bcrypt, Argon2) provide far better security.
