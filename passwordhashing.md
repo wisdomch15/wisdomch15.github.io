@@ -3,7 +3,7 @@
 ##  Tools Used
 - Kali Linux
 - Hashcat
-- Wordlists (`rockyou.txt` and custom lists)
+- Wordlists
 
 ##  Introduction
 In this lab, I explored how password hashing and cracking works using Hashcat   
@@ -12,15 +12,15 @@ The objective was to:
 - Attempt to crack them using dictionary attacks
 - Compare the resilience of weak vs strong passwords.
 
-## ⚙️ Step 1: Setup
-Created a working directory for the lab:
+## Step 1: 
+I created a working directory for the lab:
 
 ```bash
 cd ~
 mkdir hashlab && cd hashlab
 ```
 
-Created a password list with both weak and strong passwords:
+I also created a password list with both weak and strong passwords:
 
 ```bash
 cat > passwords.txt <<'EOF'
@@ -34,9 +34,9 @@ correcthorsebatterystaple
 EOF
 ```
 
----
 
-## ⚙️ Step 2: Generate Hashes
+## Step 2: 
+I generated the hashes.
 
 ### MD5 Hashes
 ```bash
