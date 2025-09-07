@@ -91,4 +91,4 @@ Example:
 
 ## CONCLUSION
 
-Weak passwords were cracked instantly with a dictionary attack, while strong ones resisted both dictionary and brute-force attempts. MD5 and SHA-256 without salting are insecure for password storage. Strong, unique passwords combined with modern hashing algorithms (bcrypt, Argon2) provide far better security.
+Weak passwords were cracked instantly with a dictionary attack, while strong ones resisted the attempts. MD5 and SHA-256 without salting are insecure for password storage. Strong, unique passwords combined with modern hashing algorithms (bcrypt, Argon2) provide far better security.
